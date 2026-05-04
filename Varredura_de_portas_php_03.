@@ -1,0 +1,20 @@
+<?php
+$porta = 1;
+
+while ($porta <= 20) {
+    
+    if ($porta == 18) {
+        echo "Varredura interrompida por segurança na porta 18";
+        break;
+    }
+    
+    
+    if ($porta % 5 == 0) {
+        $porta++;
+        continue; // pula para a próxima iteração sem imprimir
+    }
+    
+    echo "A verificar porta $porta";
+    $porta++;
+}
+?>
